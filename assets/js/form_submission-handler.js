@@ -82,6 +82,7 @@
 
 
                 swal("Obrigado!", "Te retornarei em breve!", "success");
+                enableAllButtons(form);
                 return;
             };
 
@@ -106,6 +107,13 @@
         var buttons = form.querySelectorAll("button");
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].disabled = true;
+        }
+    }
+
+    function enableAllButtons(form) {
+        var buttons = form.querySelectorAll('button');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].disabled = false;
         }
     }
 })();
