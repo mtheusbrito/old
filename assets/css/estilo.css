@@ -20,8 +20,8 @@ a:hover {
     border: 0;
 }
 
-img {
-    width: 100%;
+#more {
+    display: none;
 }
 
 p {
@@ -146,10 +146,13 @@ input[type='text'], input[type='email'], textarea {
 }
 
 .main-header img {
-    width: 100px;
-    height: 100px;
+   width: 100px;
+   height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 100%;
-    overflow: hidden;
+    /* display: block; */
 }
 
 .main-content {
@@ -313,7 +316,14 @@ input[type='text'], input[type='email'], textarea {
         text-align: center;
     }
     .main-header img {
-        width: 30%;
+        /* width: 30%; */
+    }
+
+    .fa-ul li{
+        margin: 0;
+    }
+    .fa-ul li:first-child {
+        margin-top: 1.5em;
     }
     .main-header-title {
         font-size: 1.35em;
@@ -382,9 +392,15 @@ input[type='text'], input[type='email'], textarea {
     }
     [class*='col-'] {
         width: 100%;
-        
     }
-    .col-2:last-child{
+    .col-2:last-child {
         margin-left: 0;
+    }
+    
+    .fa-ul li{
+        margin: 0;
+    }
+    .fa-ul li:first-child {
+        margin-top: 1.5em;
     }
 }
